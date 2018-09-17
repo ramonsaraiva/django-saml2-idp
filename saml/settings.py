@@ -55,21 +55,6 @@ DATABASES = {
     }
 }
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
-
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
@@ -88,7 +73,7 @@ SAML_IDP_BASE_URL = 'http://localhost:8000/idp'
 
 SAML_IDP_CONFIG = {
     'debug' : DEBUG,
-    'xmlsec_binary': get_xmlsec_binary(['/opt/local/bin', '/usr/bin/xmlsec1']),
+    'xmlsec_binary': get_xmlsec_binary(['/usr/bin/xmlsec1']),
     'entityid': '{}/metadata'.format(SAML_IDP_BASE_URL),
     'description': 'Django SAML2 IdP',
 
@@ -108,7 +93,7 @@ SAML_IDP_CONFIG = {
     },
 
     'metadata': {
-        'local': [os.path.join(os.path.join(os.path.join(BASE_DIR, 'idp'), 'saml2_config'), 'sp_metadata.xml')],
+        'local': [os.path.join(BASE_DIR, 'metadata/metadata.xml')],
     },
 
     # Signing
