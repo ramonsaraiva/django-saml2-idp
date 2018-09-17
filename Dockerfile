@@ -1,9 +1,7 @@
-FROM python:2.7-alpine
+FROM python:2.7
 
-RUN apk add --update \
-    build-base libffi-dev openssl-dev \
-    xmlsec xmlsec-dev \
-  && rm -rf /var/cache/apk/*
+RUN apt-get update && apt-get install -y \
+    libffi-dev libxmlsec1-dev libxmlsec1-openssl xmlsec1
 
 ADD . /code
 WORKDIR /code
