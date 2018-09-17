@@ -1,1 +1,7 @@
 Hello {{ user }}
+
+{% if not user.is_authenticated %}
+    <a href="/accounts/login/?next=/">Login</a>
+{% else %}
+    <a href="/accounts/logout/?next=/">Logout</a>
+{% endif %}
