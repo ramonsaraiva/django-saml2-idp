@@ -85,6 +85,9 @@ import saml2
 from saml2.saml import NAMEID_FORMAT_EMAILADDRESS, NAMEID_FORMAT_UNSPECIFIED
 from saml2.sigver import get_xmlsec_binary
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 SAML_IDP_BASE_URL = 'http://localhost:8000/idp'
 
 SAML_IDP_CONFIG = {
@@ -113,12 +116,12 @@ SAML_IDP_CONFIG = {
     },
 
     # Signing
-    'key_file': BASE_DIR + '/certificates/private.key',
-    'cert_file': BASE_DIR + '/certificates/public.cert',
+    'key_file': os.path.join(BASE_DIR, 'certificates/private.key'),
+    'cert_file': os.path.join(BASE_DIR, 'certificates/public.cert'),
     # Encryption
     'encryption_keypairs': [{
-        'key_file': BASE_DIR + '/certificates/private.key',
-        'cert_file': BASE_DIR + '/certificates/public.cert',
+        'key_file': os.path.join(BASE_DIR, 'certificates/private.key'),
+        'cert_file': os.path.join(BASE_DIR, 'certificates/public.cert'),
     }],
     'valid_for': 365 * 24,
 }
@@ -126,7 +129,7 @@ SAML_IDP_CONFIG = {
 # Each key in this dictionary is a SP our IDP will talk to
 
 SAML_IDP_SPCONFIG = {
-    'http://localhost:8000/saml2/metadata/': {
+    'http://localhost:9000/saml2/metadata': {
         'processor': 'djangosaml2idp.processors.BaseProcessor',
         'attribute_mapping': {
             'email': 'email',
