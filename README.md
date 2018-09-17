@@ -1,7 +1,7 @@
 # django-saml2-idp
 
 A Django SAML2 SSO Identity Provider PoC.
-It integrates with this [Django SAML2 Service Provider PoC](https://github.com/ramonsaraiva/django-saml2-sp). It has the SP metadata XML file built-in.
+Integrates with this [Django SAML2 Service Provider PoC](https://github.com/ramonsaraiva/django-saml2-sp) _(SP metadata XML file built-in)_.  
 Uses [djangosaml2idp](https://github.com/OTA-Insight/djangosaml2idp) as its skeleton.
 
 ## Running
