@@ -1,4 +1,27 @@
-<ns0:EntityDescriptor xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" entityID="http://localhost:9000/saml2/metadata" validUntil="2019-09-17T19:55:14Z"><ns0:Extensions><ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" /><ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" /><ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224" /><ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" /><ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" /><ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1" /><ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256" /><ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5" /><ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160" /><ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224" /><ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384" /><ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" /></ns0:Extensions><ns0:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><ns0:KeyDescriptor use="signing"><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIIDDDCCAfSgAwIBAgIJAPR7WEkGs1xiMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNV
+<ns0:EntityDescriptor xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" entityID="http://localhost:9000/saml2/metadata" validUntil="2019-09-17T19:55:14Z">
+   <ns0:Extensions>
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" />
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" />
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224" />
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384" />
+      <ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+   </ns0:Extensions>
+   <ns0:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <ns0:KeyDescriptor use="signing">
+         <ns2:KeyInfo>
+            <ns2:X509Data>
+               <ns2:X509Certificate>MIIDDDCCAfSgAwIBAgIJAPR7WEkGs1xiMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNV
 BAMMEHNwLmxvY2FsaG9zdC5jb20wHhcNMTgwOTE3MTgyMjI0WhcNMjgwOTE0MTgy
 MjI0WjAbMRkwFwYDVQQDDBBzcC5sb2NhbGhvc3QuY29tMIIBIjANBgkqhkiG9w0B
 AQEFAAOCAQ8AMIIBCgKCAQEAnzBd84gfN5gAo+tRm1eabtgZP26ZjAqrS9Upj3Ms
@@ -14,8 +37,14 @@ SVwgo3WN9C3I9dHRAVbfZo4l/eD6EiuTX4sOswE3RDFvTGRXKcWUTlkmh2ocGKHI
 SzoxMhFIMLYMzx37/YugSmoS3ZUkl+wOCUttd4lBDgQ2JyqHH5B05wJdtwxsl3zQ
 KY3s/neB/uJZdYOg+2saPjfYhgFQJl0/jzi9s7qggMZAERkm2gqP16EzmESLbUbM
 /h0l8IRcv2wLCme/okBEj9kFvcJVv2ZMQkcTOM00vzm3bu9dqL3TPhKMVJHDeiMS
-ARYJT/b+n9/0iCqi2XFGEw==
-</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns0:KeyDescriptor><ns0:KeyDescriptor use="encryption"><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIIDDDCCAfSgAwIBAgIJAPR7WEkGs1xiMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNV
+ARYJT/b+n9/0iCqi2XFGEw==</ns2:X509Certificate>
+            </ns2:X509Data>
+         </ns2:KeyInfo>
+      </ns0:KeyDescriptor>
+      <ns0:KeyDescriptor use="encryption">
+         <ns2:KeyInfo>
+            <ns2:X509Data>
+               <ns2:X509Certificate>MIIDDDCCAfSgAwIBAgIJAPR7WEkGs1xiMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNV
 BAMMEHNwLmxvY2FsaG9zdC5jb20wHhcNMTgwOTE3MTgyMjI0WhcNMjgwOTE0MTgy
 MjI0WjAbMRkwFwYDVQQDDBBzcC5sb2NhbGhvc3QuY29tMIIBIjANBgkqhkiG9w0B
 AQEFAAOCAQ8AMIIBCgKCAQEAnzBd84gfN5gAo+tRm1eabtgZP26ZjAqrS9Upj3Ms
@@ -31,5 +60,11 @@ SVwgo3WN9C3I9dHRAVbfZo4l/eD6EiuTX4sOswE3RDFvTGRXKcWUTlkmh2ocGKHI
 SzoxMhFIMLYMzx37/YugSmoS3ZUkl+wOCUttd4lBDgQ2JyqHH5B05wJdtwxsl3zQ
 KY3s/neB/uJZdYOg+2saPjfYhgFQJl0/jzi9s7qggMZAERkm2gqP16EzmESLbUbM
 /h0l8IRcv2wLCme/okBEj9kFvcJVv2ZMQkcTOM00vzm3bu9dqL3TPhKMVJHDeiMS
-ARYJT/b+n9/0iCqi2XFGEw==
-</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns0:KeyDescriptor><ns0:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</ns0:NameIDFormat><ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:9000/saml2/acs/" index="1" /></ns0:SPSSODescriptor></ns0:EntityDescriptor>
+ARYJT/b+n9/0iCqi2XFGEw==</ns2:X509Certificate>
+            </ns2:X509Data>
+         </ns2:KeyInfo>
+      </ns0:KeyDescriptor>
+      <ns0:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</ns0:NameIDFormat>
+      <ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:9000/saml2/acs/" index="1" />
+   </ns0:SPSSODescriptor>
+</ns0:EntityDescriptor>
