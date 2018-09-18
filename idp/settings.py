@@ -28,7 +28,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'saml.urls'
+ROOT_URLCONF = 'idp.urls'
 
 TEMPLATES = [
     {
@@ -46,7 +46,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'saml.wsgi.application'
+WSGI_APPLICATION = 'idp.wsgi.application'
 
 DATABASES = {
     'default': {
